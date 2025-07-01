@@ -71,12 +71,12 @@
 ---
 
 
-## 📈 Contribution Activity Metrics
+## 📈 Advanced Contribution Metrics
 
 <p align="center">
-  [<img src="./github-metrics.svg" alt="Metrics" />](https://github.com/Praveen-C05/Praveen-C05/blob/main/github-metrics.svg
-)
+  <img src="https://raw.githubusercontent.com/Praveen-C05/Praveen-C05/main/github-metrics.svg" alt="Advanced GitHub Metrics" width="100%" />
 </p>
+
 
 
 ---
