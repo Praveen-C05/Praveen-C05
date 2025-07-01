@@ -74,7 +74,8 @@
 ## 📈 Contribution Activity Metrics
 
 <p align="center">
-  <img src="./github-metrics.svg" alt="Metrics" />
+  [<img src="./github-metrics.svg" alt="Metrics" />](https://github.com/Praveen-C05/Praveen-C05/blob/main/github-metrics.svg
+)
 </p>
 
 
