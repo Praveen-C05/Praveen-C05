@@ -28,7 +28,7 @@
 ## 🛠️ My Favorite Tools & Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,nextjs,nodejs,express,tailwind,java,mysql,mongodb,php,postman,git,github,aws,linux,vscode,docker,kubernetes" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs,express,tailwind,java,mysql,mongodb,php,postman,git,github,aws,linux,vscode" />
 </p>
 
 ---
@@ -41,6 +41,13 @@
 </p>
 
 ---
+
+## 📈 GitHub Metrics Dashboard
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Praveen-C05/Praveen-C05/main/github-metrics.svg" alt="GitHub Metrics" />
+</p>
+-----
 
 ## 🏆 GitHub Trophies & Contribution Streak
 
@@ -71,10 +78,11 @@
 ---
 
 
-## 📈 Advanced Contribution Metrics
+## 📈 Contribution Activity Metrics
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Praveen-C05/Praveen-C05/main/github-metrics.svg" alt="Advanced GitHub Metrics" width="100%" />
+  [<img src="./github-metrics.svg" alt="Metrics" />](https://github.com/Praveen-C05/Praveen-C05/blob/main/github-metrics.svg
+)
 </p>
 
 
