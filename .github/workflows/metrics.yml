@@ -3,7 +3,7 @@ name: 📊 Generate GitHub Metrics
 on:
   schedule:
     - cron: "0 */6 * * *"  # Every 6 hours
-  workflow_dispatch:       # Manual trigger
+  workflow_dispatch:
 
 jobs:
   metrics:
@@ -16,10 +16,7 @@ jobs:
       - name: 📊 Generate Metrics
         uses: lowlighter/metrics@latest
         with:
-          # 👇 Personal access token stored in GitHub secrets
           token: ${{ secrets.METRICS_TOKEN }}
-
-          # 👇 This is what you're missing!
           committer_token: ${{ secrets.METRICS_TOKEN }}
 
           user: Praveen-C05
@@ -34,6 +31,4 @@ jobs:
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
 
-          # Enables commit of metrics.svg
           output_action: commit
-          output_commit_message: "📊 Update GitHub metrics"
