@@ -2,8 +2,8 @@ name: 📊 Generate GitHub Metrics
 
 on:
   schedule:
-    - cron: "0 */6 * * *"  # Runs every 6 hours
-  workflow_dispatch:       # Allows manual trigger
+    - cron: "0 */6 * * *"  # Every 6 hours
+  workflow_dispatch:       # Manual trigger
 
 jobs:
   metrics:
@@ -16,7 +16,7 @@ jobs:
       - name: 📊 Generate Metrics
         uses: lowlighter/metrics@latest
         with:
-          token: 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
+          token: ${{ secrets.METRICS_TOKEN }}
           user: Praveen-C05
           template: classic
           base: header, activity, community, repositories, metadata
