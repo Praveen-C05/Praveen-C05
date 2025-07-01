@@ -1,8 +1,9 @@
 name: 📊 Generate GitHub Metrics
 
 on:
-  schedule: [{ cron: "0 */6 * * *" }] # Every 6 hours
-  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"  # Runs every 6 hours
+  workflow_dispatch:       # Allows manual trigger
 
 jobs:
   metrics:
@@ -15,7 +16,7 @@ jobs:
       - name: 📊 Generate Metrics
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: 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
           user: Praveen-C05
           template: classic
           base: header, activity, community, repositories, metadata
@@ -27,4 +28,4 @@ jobs:
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
           output_action: commit
-          committer_message: "📊 Update GitHub metrics"
+          output_commit_message: "📊 Update GitHub metrics"
