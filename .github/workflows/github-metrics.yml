@@ -2,22 +2,22 @@ name: 📊 Generate GitHub Metrics
 
 on:
   schedule:
-    - cron: "0 6 * * *"  # Runs daily at 6AM IST
+    - cron: "0 6 * * *"
   workflow_dispatch:
 
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: 📥 Checkout repository
         uses: actions/checkout@v3
 
-      - name: Generate Metrics SVG
+      - name: 📊 Generate metrics
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: github-metrics.svg
-          output_action: commit  # ✅ This auto-commits to your repo
+          output_action: commit
           base: header, activity, community, repositories, metadata
           plugin_lines: yes
           plugin_languages: yes
