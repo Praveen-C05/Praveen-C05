@@ -2,7 +2,7 @@ name: 📊 Generate GitHub Metrics
 
 on:
   schedule:
-    - cron: "0 6 * * *"  # Runs daily at 6 AM IST
+    - cron: "0 6 * * *"  # Daily at 6 AM IST
   workflow_dispatch:
 
 jobs:
@@ -17,6 +17,7 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: github-metrics.svg
+          output_action: none  # Don't auto-commit; we'll do it manually
           base: header, activity, community, repositories, metadata
           plugin_lines: yes
           plugin_isocalendar: yes
@@ -24,10 +25,14 @@ jobs:
           plugin_activity: yes
           plugin_traffic: yes
 
+      - name: 🚀 Move Metrics to Root
+        run: |
+          cp github-metrics.svg $GITHUB_WORKSPACE/github-metrics.svg
+
       - name: 📤 Commit and Push Metrics
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
           git add github-metrics.svg
-          git commit -m "📈 Update GitHub Metrics"
+          git commit -m "📈 Update GitHub Metrics" || echo "No changes to commit"
           git push
