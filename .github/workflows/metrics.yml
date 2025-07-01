@@ -1,7 +1,8 @@
 name: 📊 Generate GitHub Metrics
+
 on:
   schedule:
-    - cron: "0 */12 * * *" # Every 12 hours
+    - cron: "0 6 * * *"
   workflow_dispatch:
 
 jobs:
@@ -9,35 +10,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 📥 Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: 📊 Generate Metrics
         uses: lowlighter/metrics@latest
         with:
-          filename: github-metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          user: Praveen-C05
-
-          # Plugins
+          filename: github-metrics.svg
+          output_action: none  # Don't auto commit yet
           base: header, activity, community, repositories, metadata
-          config_timezone: Asia/Kolkata
-          config_order: base, isocalendar, languages, habits, stargazers
-          plugin_isocalendar: yes
-          plugin_languages: yes
-          plugin_languages_ignored: html, css
-          plugin_languages_skipped: ""
-          plugin_languages_sections: most-used
-          plugin_languages_indepth: yes
-          plugin_stargazers: yes
-          plugin_habits: yes
-          plugin_habits_charts: yes
-          plugin_habits_trim: false
           plugin_lines: yes
+          plugin_languages: yes
+          plugin_isocalendar: yes
           plugin_traffic: yes
 
-          # Visitors (enabled by default with classic token)
-          plugin_followup: yes
+      - name: 🚀 Move Metrics to Root
+        run: |
+          mkdir -p ./metrics_renders
+          mv metrics_renders/github-metrics.svg ./github-metrics.svg
 
-          # Optional: WakaTime plugin (only if you set token)
-          plugin_wakatime: yes
-          wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
+      - name: 📤 Commit and Push Metrics
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git add github-metrics.svg
+          git commit -m "📈 Update GitHub metrics" || echo "No changes"
+          git push
