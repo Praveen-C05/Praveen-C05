@@ -15,11 +15,11 @@
 ## 👨‍💻 About Me
 
 - 💼 Currently working in **Full Stack Development** as an intern at **Pytheos Health Systems Pvt. Ltd.**  
-- 🧑‍💻 Intern journey includes building a professional portfolio using **React**, **Tailwind CSS**, and implementing advanced UI/UX features  
-- 🛠️ Hands-on with **theme toggles**, **background effects**, **StarBackground animation**, and **responsive navigation**  
-- 🔄 Practicing component-based design via `HeroSection`, `AboutSection`, `SkillsSection`, `ProjectsSection`, and `ContactSection`  
-- 🌱 Learning real-world cloud-native architecture, deployment techniques, and backend development during this internship  
-- 🧠 Exploring agile project structure, collaborative workflows, and scalable system design  
+- 🧑‍💻 Intern journey includes building a professional portfolio using **React**, **Tailwind CSS** and implementing advanced UI/UX features  
+- 🛠️ Hands-on with **theme toggles**, **background effects**, **StarBackground animation** and **responsive navigation**  
+- 🔄 Practicing component-based design via `HeroSection`, `AboutSection`, `SkillsSection`, `ProjectsSection` and `ContactSection`  
+- 🌱 Learning real-world cloud-native architecture, deployment techniques and backend development during this internship  
+- 🧠 Exploring agile project structure, collaborative workflows and scalable system design  
 - ✨ Spiritual coder, guided by Shiva  
 - 📫 Reach out at **mr5praveen55@gmail.com**
 
@@ -102,7 +102,7 @@
 ## 💡 Personal Philosophy
 
 <p align="center">
-  “Code like Shiva dances — with power, rhythm, and purpose.”
+  “Code like Shiva dances — with power, rhythm and purpose.”
 </p>
 
 ---
