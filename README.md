@@ -72,8 +72,8 @@
 | Project | Tech Used | Description |
 |--------|-----------|-------------|
 | [Portfolio Website](https://github.com/Praveen-C05/portfolio) | React, Tailwind CSS | Personal brand site with dark mode, animations |
-| [Weather App](https://github.com/Praveen-C05/weather-app) | Node.js, Express | Real-time weather updates using OpenWeather API |
-| [Blog App](https://github.com/Praveen-C05/blog-app) | MongoDB, Node, EJS | A full CRUD blog site |
+| [railway-reservation-DBMS](https://github.com/Praveen-C05/railway-reservation-DBMS) | SQL scripts for creating tables, Sample data insertion | Practice queries (Joins, Subqueries, Aggregates, etc. |
+| [Dynamic-webPage](https://github.com/Praveen-C05/Dynamic-webPage.git) | HTML, CSS, JS | OTP validation using php |
 
 ---
 
